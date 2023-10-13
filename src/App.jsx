@@ -4,7 +4,7 @@ import './App.css'
 
 function App() {
  const [task,setTask] = useState("")
- const [todo,setTodo] = useState(JSON.parse(localStorage.getItem('todo')))
+ const [todo,setTodo] = useState(JSON.parse(localStorage.getItem('todo')) || [])
  const [status,setStatus] = useState(0)
 
  useEffect(()=>{
