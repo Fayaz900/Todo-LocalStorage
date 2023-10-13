@@ -41,7 +41,11 @@ const deleteTask=(key)=>{
                   <button onClick={add}>Add <i className="fa-solid fa-circle-plus"></i></button>
               </div>
         </div>
-         
+        {
+          todo.length==0 ?
+          <h1 className='noitem'>No item <i className="fa-solid fa-cart-shopping fa-l" />
+          </h1>
+          :
           
         <div className="result">
           {
@@ -68,7 +72,7 @@ const deleteTask=(key)=>{
           }
             
         </div>
-
+        }
    </div>
   )
 }
