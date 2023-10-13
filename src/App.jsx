@@ -9,7 +9,7 @@ function App() {
 
  useEffect(()=>{
   localStorage.setItem('todo',JSON.stringify(todo))
- },[todo])
+ },[todo,status])
 
  const add=()=>{
   const data = [task,"incomplete"]
